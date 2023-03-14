@@ -1,0 +1,6 @@
+<div class="className">{{ class.name }}</div>
+<div class="teacherName">{{ class.teacher }}</div>
+<div class="occupancy"><occupancy-component [class] = "class"/></div>
+<div class="options"><button (click)="clickDelete($event)" class="remove-button">Delete</button>
+<button [disabled]="class.students.length == class.maxNoOfStudents" (click)="clickAdd($event)" class="add-student">Add student</button>
+</div>

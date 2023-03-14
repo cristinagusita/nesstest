@@ -1,0 +1,13 @@
+<search-component (searchEvent) = "search($event)"/>
+<div class="classes-header">
+  <span class="className">Class name</span>
+  <span class="teacherName">Teacher name</span>
+  <span class="occupancy">Occupancy</span>
+  <span class="options">Options</span>
+</div>
+<div class="classes-container" *ngFor="let class of filteredClasses">
+  <class-component (addEventEmitter) = "addStudent($event)" (deleteEventEmitter) = "deleteClass($event)" [class] = "class"/>
+</div>
+
+<popup-component 
+(buttonEmitter)="buttonHandler($event)" [hidden]="hidden" title="Please provide a student name"/>

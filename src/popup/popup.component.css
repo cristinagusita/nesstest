@@ -1,0 +1,48 @@
+.popup-over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popup {
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+.popup-title {
+  background: #f2f2f2;
+  padding: 10px;
+}
+.popup-body {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  padding: 10px;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit {
+  background: yellowgreen;
+}
+.cancel {
+  margin-left: 10px;
+  background: orangered;
+}
+button {
+  padding: 2px;
+  border-radius: 10%;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  color: white;
+}

@@ -1,0 +1,18 @@
+<div class="popup-over" *ngIf="!hidden">
+  <div class="popup">
+    <div class="popup-title">{{ title }}</div>
+    <div class="popup-body">
+      <input (keyup)="updateValue($event)" />
+    </div>
+    <div class="buttons">
+      <button
+        *ngIf="value.length > 0"
+        (click)="clickSubmit($event)"
+        class="submit"
+      >
+        Submit
+      </button>
+      <button (click)="clickCancel($event)" class="cancel">Cancel</button>
+    </div>
+  </div>
+</div>

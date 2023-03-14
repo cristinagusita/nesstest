@@ -1,0 +1,38 @@
+:host {
+  padding: 10px;
+  display: flex;
+}
+.className,
+.teacherName {
+  width: 40%;
+}
+.occupancy {
+  width: 100%;
+}
+.remove-button {
+  background: orangered;
+  margin-left: 10px;
+}
+.add-student {
+  margin-left: 10px;
+  background: yellowgreen;
+}
+.options {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+}
+button {
+  color: white;
+  padding: 2px;
+  border-radius: 10%;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+button:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
