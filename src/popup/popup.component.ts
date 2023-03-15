@@ -19,8 +19,10 @@ export class PopupComponent {
   }
   clickSubmit(event) {
     this.buttonEmitter.emit([true, this.value]);
+    this.value = '';
   }
   clickCancel(event) {
     this.buttonEmitter.emit([false, this.value]);
+    this.value = '';
   }
 }
